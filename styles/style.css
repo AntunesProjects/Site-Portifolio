@@ -130,7 +130,7 @@ nav button:active {
     flex-direction: column;
     padding: 1vh;
     width: 70%;
-    height: 100vh;
+    height: 95vh;
     margin-left: 15vw;
 }
 
@@ -194,3 +194,89 @@ nav button:active {
 }
 
 /*fim da pagina dos projetos*/
+
+.sobre-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10vh;
+    height: 100vh;
+    justify-content: space-between;
+
+    border-radius: 50px;
+    background-color: var(--color-a);
+}
+
+.sobre-container-texto {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    text-align: justify;
+}
+
+.sobre-container-texto h1, .sobre-container-texto p {
+    margin-bottom: 5vh;
+}
+
+.sobre-container-texto a {
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-c);
+}
+
+.sobre-container-texto a:hover {
+    text-decoration: underline;
+}
+
+.sobre-container-item {
+    margin-right: 12vh;
+    align-self: center;
+    justify-self: center;
+    width: 12vw;
+    height: 35vh;
+
+    border-radius: 10px;
+    background-color: var(--color-f);
+}
+
+/*Fim da pagina sobre*/
+
+.contato-container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding:  5vh;
+    text-align: center;
+    
+    color: var(--color-d);
+}
+
+.contato-container h2 {
+    margin-top: 25vh;
+    margin-bottom: 2vh;
+}
+
+.contato-container p {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 50vw;
+}
+
+.contato-container-icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 5%;
+    width: 10vw;
+}
+
+.contato-container-icones a svg {
+    opacity: 90%;
+    width: 1.4vw;
+    height: auto;
+
+}

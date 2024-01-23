@@ -9,12 +9,21 @@
     --color-f: #152e42;
     --color-g: #204766;
     --color-h: #336792;
+    --color-i: #ffffff;
 }
+
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    background-color: var(--color-e);
+    color: var(--color-d);
+
 }
 
 nav {
@@ -98,6 +107,10 @@ nav button:active {
     margin-left: 1.1vh;
     cursor: pointer;
     opacity: 70%;
+}
+
+body.modo-noturno .aside-container-icons a svg {
+    filter: invert(100%);
 }
 
 .aside-container-icons a {
@@ -208,14 +221,14 @@ nav button:active {
     color: var(--color-c);
     
     box-shadow: #00000031 0px 10px 10px 2px;
-    background-color: var(--color-);
+    background-color: var(--color-i);
     transition: all 0.3s ease;
 }
 
 .projeto-texto-oculto {
     position: absolute;
     z-index: 1000;
-    color: var(--color-a);
+    color: #dee2e6;
     left: 2.2vw;
     top: 2.5vw;
     opacity: 0; 
@@ -351,7 +364,10 @@ nav button:active {
     opacity: 90%;
     width: 1.4vw;
     height: auto;
+}
 
+body.modo-noturno .contato-container-icones a svg {
+    filter: invert(100%);
 }
 
 /*Fim da pagina contato*/

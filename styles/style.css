@@ -372,6 +372,71 @@ body.modo-noturno .contato-container-icones a svg {
 
 /*Fim da pagina contato*/
 
+/*MOBILE*/
+@media screen and (max-width: 999px) {
+    nav a {
+        display: none;
+    }
+
+    /*Fim da barra de navegação*/
+    .aside-container {
+        top: 90vh;
+    }
+
+    .aside-container-icons {
+        display: none;
+    }
+
+    /*Fim da barra lateral desktop*/
+
+    .trabalho-container-titulo {
+        font-size: 4.5vw;
+    }
+
+    .trabalho-container button {
+        width: 40vw;
+        height: 5vh;
+    }
+
+    /*Fim da pagina de trabalho*/
+    .projeto {
+        max-width: 50vw;
+    }
+
+    .projetos-container {
+        height: 165vh;
+    }
+
+    .projetos-container h1 {
+    text-align: center;
+    }
+
+    .projetos-container-galeria {
+        height: 100%;
+        margin-top: 8vh;
+        font-size: 0.1vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .projeto img {
+        max-width: 117.4%;
+    }
+
+    .projeto-icones a svg {
+        display: none;
+    }
+
+
+}
+
+/*Fim da sessão de projetos*/
+
+.sobre-container-texto {
+    width: 100vw;
+}
+
 /*ANIMAÇÕES*/
 
 @keyframes fadeInUp{

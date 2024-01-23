@@ -86,7 +86,6 @@ nav button:active {
     justify-content: space-between;
     flex-direction: column;
     align-items: start;
-    background-color: var(--color-h);
     border-radius: 60px;
 }
 
@@ -94,10 +93,11 @@ nav button:active {
     background-color: var(--color-b);
 }
 .aside-container-icons a svg {
-    width: 1vw;
+    width: 0.9vw;
     height: auto;
     margin-left: 1.1vh;
     cursor: pointer;
+    opacity: 70%;
 }
 
 .aside-container-icons a {
@@ -124,25 +124,25 @@ nav button:active {
 }
 
 .trabalho-container-titulo h1 {
-        animation:fadeInUp 1.2s ease backwards; /*animação fade in up da pagina*/
+    animation:fadeInUp 1.2s ease backwards; /*animação fade in up da pagina*/
 }
 
 .trabalho-container-titulo h3 {
     font-weight: 400;
     color: var(--color-c);
-        animation:fadeInUp 0.5s ease backwards; /*animação fade in up da pagina*/
+    animation:fadeInUp 0.5s ease backwards; /*animação fade in up da pagina*/
 }
 
 .trabalho-container-titulo h2 {
     font-weight: 600;
     color: var(--color-c);
-        animation:fadeInUp 1s ease backwards; /*animação fade in up da pagina*/
+    animation:fadeInUp 1s ease backwards; /*animação fade in up da pagina*/
 }
 
 .trabalho-container-texto {
     color: var(--color-c);
     text-align: justify;
-        animation:fadeInUp 1.5s ease backwards; /*animação fade in up da pagina*/
+    animation:fadeInUp 1.5s ease backwards; /*animação fade in up da pagina*/
 }
 
 .trabalho-container button {
@@ -209,10 +209,31 @@ nav button:active {
     
     box-shadow: #00000031 0px 10px 10px 2px;
     background-color: var(--color-);
+    transition: all 0.3s ease;
 }
 
+.projeto-texto-oculto {
+    position: absolute;
+    z-index: 1000;
+    color: var(--color-a);
+    left: 2.2vw;
+    top: 2.5vw;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.projeto:hover .projeto-texto-oculto {
+    opacity: 1; /* Ao passar o mouse, aumenta a opacidade para 1 */
+}
+
+.projeto:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
 
 .projeto img {
+    position: relative;
     max-width: 100%;
     height: auto;
     margin-bottom: 1vh;

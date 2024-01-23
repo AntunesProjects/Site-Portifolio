@@ -39,3 +39,9 @@ function smoothScroll(targetId) {
         });
     }
 }
+
+
+//Onclick
+    function redirecionarParaURL(url) {
+        window.location.href = url;
+    }

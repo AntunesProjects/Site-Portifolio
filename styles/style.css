@@ -8,6 +8,7 @@
     --color-e: #ffffff;
     --color-f: #152e42;
     --color-g: #204766;
+    --color-h: #336792;
 }
 
 * {
@@ -65,39 +66,42 @@ nav button:active {
 /*Fim da barra de navegação*/
 
 .aside-container {
-    display: none;
     position: fixed;
-    top: 20vw;
-    left: 0.8vh;
+    top: 18.7vw;
+    left: -20vw;
     z-index: 1000;
 
-    animation:slideFade 0.4s;
+    transition: left 0.4s;
+}
+
+.hidden {
+    display: none;
 }
 
 .aside-container-icons {
     display: flex;
-    height: 25vh;
-    width: 3vw;
-    padding: 4vh 0.3vh 4vh 0.3vh;
+    height: 20vh;
+    width: 2vw;
+    padding: 1vh 0.4vh 1vh 0.3vh;
     justify-content: space-between;
     flex-direction: column;
     align-items: start;
-    background-color: var(--color-a);
+    background-color: var(--color-h);
     border-radius: 60px;
 }
 
 .aside-container-icons a:hover {
-    background-color: var(--color-d);
+    background-color: var(--color-b);
 }
 .aside-container-icons a svg {
     width: 1vw;
     height: auto;
-    margin-left: 2vh;
+    margin-left: 1.1vh;
     cursor: pointer;
 }
 
 .aside-container-icons a {
-    padding: 1vh 2vh 1vh 0;
+    padding: 1vh 1vh 0.5vh 0vh;
     border-radius: 50px;
 
     transition: background-color 0.3s;
@@ -255,9 +259,10 @@ nav button:active {
 }
 
 .sobre-container-texto {
+    margin-left: 9vw;
     display: flex;
     flex-direction: column;
-    width: 55vw;
+    width: 40vw;
     text-align: justify;
 }
 
@@ -344,5 +349,5 @@ nav button:active {
 
 @keyframes slideFadeOut{
     0%{transform:translateX(0); opacity: 1;}
-    100%{transform: translateX(0-100px); opacity: 0;}
+    100%{transform: translateX(-100px); opacity: 0;}
 }

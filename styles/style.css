@@ -418,7 +418,7 @@ body.modo-noturno .contato-container-icones a svg {
     }
 
     .projetos-container {
-        height: 165vh;
+        height: 180vh;
     }
 
     .projetos-container h1 {
@@ -436,7 +436,7 @@ body.modo-noturno .contato-container-icones a svg {
     }
 
     .projeto img {
-        max-width: 117.4%;
+        width: 50vh;
     }
 
     .projeto-icones a svg {
@@ -448,12 +448,12 @@ body.modo-noturno .contato-container-icones a svg {
     .sobre-container {
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
         padding: 0;
     }
 
     .sobre-container-texto {
-        font-size: 1.4vh;
+        font-size: 3.5vw;
+        font-size: 1.6vh;
         width: 50vw;
     }
 
@@ -474,16 +474,22 @@ body.modo-noturno .contato-container-icones a svg {
         width: 60vw;
     }
 
+    .contato-container {
+        justify-content: center;
+    }
+
     .contato-container-icones  {
         margin-top: 2vh;
-        flex-direction: column;
+        flex-direction: row;
         height: 20vh;
         width: 60vw;
-        align-items: start;
+        justify-content: space-around;
+        align-items: center;
+
     }
 
     .contato-container-icones a svg{
-        width: 10vw;
+        width: 6vw;
     }
 
 }

@@ -355,7 +355,7 @@ body.modo-noturno .aside-container-icons a svg {
 .contato-container-icones {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     height: 5%;
     width: 10vw;
 }
@@ -418,6 +418,7 @@ body.modo-noturno .contato-container-icones a svg {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 5vh;
     }
 
     .projeto img {
@@ -428,14 +429,54 @@ body.modo-noturno .contato-container-icones a svg {
         display: none;
     }
 
+    /*Fim da sessão de projetos*/
+
+    .sobre-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .sobre-container-texto {
+        font-size: 1.4vh;
+        width: 50vw;
+    }
+
+    .sobre-container-item {
+        margin: 1vh;
+        width: 35vw;
+    }
+
+    /*Fim da sessão sobre*/
+
+    .contato-container h2 {
+        margin-top: 5vh;
+        font-weight: 400;
+    }
+
+    .contato-container p {
+        text-align: justify;
+        width: 60vw;
+    }
+
+    .contato-container-icones  {
+        margin-top: 2vh;
+        flex-direction: column;
+        height: 20vh;
+        width: 60vw;
+        align-items: start;
+    }
+
+    .contato-container-icones a svg{
+        width: 10vw;
+    }
 
 }
 
-/*Fim da sessão de projetos*/
 
-.sobre-container-texto {
-    width: 100vw;
-}
+
+
 
 /*ANIMAÇÕES*/
 

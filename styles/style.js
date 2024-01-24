@@ -37,6 +37,7 @@ function smoothScroll(targetId) {
     }
 }
 
+
 //Onclick
 function redirecionarParaURL(url) {
     window.location.href = url;
@@ -92,3 +93,29 @@ function atualizarVariaveisCSS(modoNoturnoAtivo) {
         });
     }
 }
+
+//Navegação mobile
+
+ function goToNextSection() {
+    var currentSection = document.querySelector('.current-section');
+
+    if (!currentSection) {
+      currentSection = document.querySelector('section');
+      currentSection.classList.add('current-section');
+      smoothScroll('#outraSessao'); // Substitua 'outraSessao' pelo ID da próxima seção
+      return;
+    }
+
+
+    var nextSection = currentSection.nextElementSibling;
+
+    if (!nextSection) {
+      nextSection = document.querySelector('section');
+    }
+
+    currentSection.classList.remove('current-section');
+
+    nextSection.classList.add('current-section');
+
+    smoothScroll('#' + nextSection.id);
+  }

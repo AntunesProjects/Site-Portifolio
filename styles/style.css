@@ -120,6 +120,10 @@ body.modo-noturno .aside-container-icons a svg {
     transition: background-color 0.3s;
 }
 
+.aside-mobile-nav {
+    display: none;
+}
+
 /*Fim da sessão da barra lateral*/
 
 .trabalho-container {
@@ -393,6 +397,23 @@ body.modo-noturno .contato-container-icones a svg {
     }
 
     /*Fim da barra lateral desktop*/
+
+    .aside-mobile-nav {
+        display:none;
+        position: fixed;
+        bottom: 35vw;
+        left: 0vh;
+        z-index: 1000;
+    }
+
+    .aside-mobile-nav:hover {
+        cursor: pointer;
+    }
+
+    .aside-mobile-nav svg {
+        width: 5vh;
+        height: auto;
+    }
 
     .trabalho-container {
         width: 70vw;

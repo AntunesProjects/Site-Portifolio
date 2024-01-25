@@ -478,6 +478,10 @@ body.modo-noturno .contato-container-icones a svg {
         margin-bottom: 5vh;
     }
 
+    .projeto-texto-oculto {
+        display: none;
+    }
+
     .projeto img {
         width: 50vh;
     }
@@ -508,19 +512,19 @@ body.modo-noturno .contato-container-icones a svg {
     /*Fim da sessão sobre*/
 
     .contato-container h1 {
-        font-size: 5vw;
+        font-size: 3vh;
     }
 
     .contato-container h2 {
         margin-top: 5vh;
         font-weight: 400;
-        font-size: 5vw;
+        font-size: 3vh;
     }
 
     .contato-container p {
         text-align: justify;
         width: 60vw;
-        font-size: 3.2vw;
+        
     }
 
     .contato-container {

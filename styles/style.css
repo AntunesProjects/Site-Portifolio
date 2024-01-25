@@ -524,6 +524,7 @@ body.modo-noturno .contato-container-icones a svg {
     .contato-container p {
         text-align: justify;
         width: 60vw;
+        font-size: 4.5vw;
         
     }
 

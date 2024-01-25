@@ -504,6 +504,11 @@ body.modo-noturno .contato-container-icones a svg {
         width: 50vw;
     }
 
+
+    .sobre-container-texto a {
+    display: none;
+    }
+
     .sobre-container-item {
         margin: 1vh;
         width: 35vw;

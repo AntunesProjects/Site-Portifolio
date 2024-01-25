@@ -412,8 +412,14 @@ body.modo-noturno .contato-container-icones a svg {
         left: 5vh;
         z-index: 1000;
 
+        transition: all 0.2s;
+        opacity: 80%;
         border-radius: 50%;
-        background-color: var(--color-h);        
+        background-color: var(--color-c);        
+    }
+
+    .rotate-animation {
+    animation: rotate 1s ease-in-out forwards;
     }
 
     .aside-mobile-nav:hover {
@@ -423,6 +429,8 @@ body.modo-noturno .contato-container-icones a svg {
     .aside-mobile-nav svg {
         width: 5vh;
         height: auto;
+        filter: invert(100%);
+        
     }
 
     /*Fim da barra de navegação*/
@@ -456,8 +464,8 @@ body.modo-noturno .contato-container-icones a svg {
     }
 
     .projetos-container h1 {
-    text-align: center;
-    font-size: 150%;
+    text-align: start;
+    font-size: 6vw;
     }
 
     .projetos-container-galeria {
@@ -499,14 +507,20 @@ body.modo-noturno .contato-container-icones a svg {
 
     /*Fim da sessão sobre*/
 
+    .contato-container h1 {
+        font-size: 5vw;
+    }
+
     .contato-container h2 {
         margin-top: 5vh;
         font-weight: 400;
+        font-size: 5vw;
     }
 
     .contato-container p {
         text-align: justify;
         width: 60vw;
+        font-size: 3.2vw;
     }
 
     .contato-container {
@@ -526,6 +540,8 @@ body.modo-noturno .contato-container-icones a svg {
     .contato-container-icones a svg{
         width: 10vw;
     }
+
+    /*Fim da sessão contato*/
 
 }
 
@@ -549,3 +565,4 @@ body.modo-noturno .contato-container-icones a svg {
     0%{transform:translateX(0); opacity: 1;}
     100%{transform: translateX(-100px); opacity: 0;}
 }
+

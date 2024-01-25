@@ -91,23 +91,27 @@ function atualizarVariaveisCSS(modoNoturnoAtivo) {
         document.querySelectorAll('.contato-container-icones a svg').forEach(function (icon) {
             icon.classList.add('modo-noturno');
         });
+
     }
 }
 
 //Navegação mobile
-  var sectionOrder = ["inicio", "projetos", "projetoB", "projetoC", "sobre", "contato"];
+    var sectionOrder = ["inicio", "projetos", "projetoB", "projetoC", "sobre", "contato"];
     var currentSectionIndex = 0;
 
   function goToNextSection() {
-    // Encontre o ID da próxima seção usando o índice atual
     var nextSectionId = sectionOrder[currentSectionIndex];
 
-    // Obtenha a próxima seção pelo ID
     var nextSection = document.getElementById(nextSectionId);
 
-    // Role suavemente até a próxima seção
     nextSection.scrollIntoView({ behavior: 'smooth' });
 
-    // Atualize o índice para a próxima iteração
     currentSectionIndex = (currentSectionIndex + 1) % sectionOrder.length;
-  }
+    
+     var iconeMobile = document.querySelector('.aside-mobile-nav');
+        if (currentSectionIndex === 0) {
+        iconeMobile.style.transform = 'rotate(180deg)';
+        } else {
+        iconeMobile.style.transform = 'rotate(0deg)';
+        }
+    }

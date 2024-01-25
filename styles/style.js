@@ -95,27 +95,19 @@ function atualizarVariaveisCSS(modoNoturnoAtivo) {
 }
 
 //Navegação mobile
+  var sectionOrder = ["inicio", "projetos", "projetoB", "projetoC", "sobre", "contato"];
+    var currentSectionIndex = 0;
 
- function goToNextSection() {
-    var currentSection = document.querySelector('.current-section');
+  function goToNextSection() {
+    // Encontre o ID da próxima seção usando o índice atual
+    var nextSectionId = sectionOrder[currentSectionIndex];
 
-    if (!currentSection) {
-      currentSection = document.querySelector('section');
-      currentSection.classList.add('current-section');
-      smoothScroll('#outraSessao'); // Substitua 'outraSessao' pelo ID da próxima seção
-      return;
-    }
+    // Obtenha a próxima seção pelo ID
+    var nextSection = document.getElementById(nextSectionId);
 
+    // Role suavemente até a próxima seção
+    nextSection.scrollIntoView({ behavior: 'smooth' });
 
-    var nextSection = currentSection.nextElementSibling;
-
-    if (!nextSection) {
-      nextSection = document.querySelector('section');
-    }
-
-    currentSection.classList.remove('current-section');
-
-    nextSection.classList.add('current-section');
-
-    smoothScroll('#' + nextSection.id);
+    // Atualize o índice para a próxima iteração
+    currentSectionIndex = (currentSectionIndex + 1) % sectionOrder.length;
   }

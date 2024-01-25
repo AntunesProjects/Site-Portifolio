@@ -124,6 +124,10 @@ body.modo-noturno .aside-container-icons a svg {
     display: none;
 }
 
+.aside-mobile-nav:hover {
+    cursor: pointer;
+}
+
 /*Fim da sessão da barra lateral*/
 
 .trabalho-container {
@@ -399,12 +403,20 @@ body.modo-noturno .contato-container-icones a svg {
     /*Fim da barra lateral desktop*/
 
     .aside-mobile-nav {
-        display:none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: fixed;
-        bottom: 35vw;
-        left: 0vh;
+        bottom: 15vw;
+        left: 5vh;
         z-index: 1000;
+
+        opacity: 75%;
+        border-radius: 50%;
+        background-color: var(--color-h)
     }
+
+    /*Fim da barra de navegação*/
 
     .aside-mobile-nav:hover {
         cursor: pointer;
@@ -429,11 +441,12 @@ body.modo-noturno .contato-container-icones a svg {
     }
 
     .trabalho-container button {
-        width: 40vw;
+        width: 30vw;
         height: 5vh;
     }
 
     /*Fim da pagina de trabalho*/
+    
     .projeto {
         max-width: 50vw;
     }

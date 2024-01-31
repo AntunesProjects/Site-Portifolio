@@ -290,6 +290,10 @@ body.modo-noturno .aside-container-icons a svg {
     margin-right: 1.6vh;
 }
 
+#icon_3, #icon_5 {
+    display: none;
+}
+
 /*fim da pagina dos projetos*/
 
 .sobre-container {
@@ -493,6 +497,7 @@ body.modo-noturno .contato-container-icones a svg {
     .projeto-icones a svg {
         display: none;
     }
+
 
     /*Fim da sessão de projetos*/
 

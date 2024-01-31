@@ -338,10 +338,31 @@ body.modo-noturno .aside-container-icons a svg {
     justify-self: center;
     width: 12vw;
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
     border-radius: 10px;
     background-color: var(--color-f);
 }
+
+.sobre-container-item-icon {
+    border-radius: 20%;
+    
+}
+
+.sobre-container-item-icon svg{
+    width: 16vh;
+    height: auto;
+    fill: var(--color-a);
+}
+
+.sobre-container-item-texto a {
+    color: var(--color-a);
+    font-weight: 800;
+}
+
 
 /*Fim da pagina sobre*/
 
@@ -385,6 +406,8 @@ body.modo-noturno .aside-container-icons a svg {
 body.modo-noturno .contato-container-icones a svg {
     filter: invert(100%);
 }
+
+
 
 /*Fim da pagina contato*/
 

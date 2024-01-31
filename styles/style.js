@@ -91,6 +91,10 @@ function atualizarVariaveisCSS(modoNoturnoAtivo) {
         document.querySelectorAll('.contato-container-icones a svg').forEach(function (icon) {
             icon.classList.add('modo-noturno');
         });
+        document.querySelectorAll('.sobre-container-item-icon svg').forEach(function (icon) {
+            icon.classList.add('modo-noturno');
+        });
+        
 
     }
 }

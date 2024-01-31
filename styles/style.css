@@ -36,6 +36,10 @@ nav {
     background-color: var(--color-b);
 }
 
+nav img {
+    max-width: 8vh;
+}
+
 nav a {
     padding: 2vh;
 
